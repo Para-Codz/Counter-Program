@@ -1,0 +1,102 @@
+
+/* .div-outer {
+            width: 300px;
+            height: 250px;
+        } */
+/*          
+@media(max-width: 510px) {
+    .counter {
+            max-width: 500px;
+        }
+
+        
+
+
+        #countLabel{
+           font-size: 120px;
+
+        }
+};
+
+
+@media(max-width: 450px) {
+    .counter {
+            max-width: 400px;
+            padding: 50px;
+        }
+
+        .div-outer {
+            width: 200px;
+            height: 250px;
+        }
+
+
+        #countLabel{
+           font-size: 10px;
+
+        }
+}; */
+
+
+/* Keep all your existing CSS above */
+
+/* Add this at the end for responsiveness */
+@media (max-width: 500px) {
+    .div-inner, .div-outer {
+        transform: scale(0.8); /* scale everything down */
+        transform-origin: top center;
+    }
+
+    #countLabel {
+        font-size: 110px; /* smaller number for small screens */
+    }
+
+    .buttons {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin: 5px;
+    }
+
+    body {
+    background-color: #13162B;
+    margin: 0; /* remove default margin */
+    height: 100vh; /* full viewport height */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;    /* vertical centering */
+}
+
+}
+
+@media (max-width: 350px) {
+    .div-inner, .div-outer {
+        transform: scale(0.6);
+    }
+
+    #countLabel {
+        font-size: 90px;
+    }
+
+    .buttons {
+        font-size: 14px;
+        padding: 6px 12px;
+        margin: 4px;
+    }
+
+    body {
+    background-color: #13162B;
+    margin: 0; /* remove default margin */
+    height: 100vh; /* full viewport height */
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    align-items: center;    /* vertical centering */padding-left: 30px;
+}
+}
+
+
+@media (max-width: 250px) {
+    body {
+        padding-left: 100px;
+        padding-right: 10px;
+    }
+}
